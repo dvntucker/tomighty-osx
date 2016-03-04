@@ -17,6 +17,7 @@
     id <TYTimer> timer;
     id <TYPreferences> preferences;
     id <TYEventBus> eventBus;
+    BOOL continuousMode;
 }
 
 - (id)initWith:(id <TYTimer>)aTimer
@@ -30,6 +31,7 @@
         timer = aTimer;
         preferences = aPreferences;
         eventBus = anEventBus;
+        continuousMode = [preferences getInt:PREF_CONTINUOUS_MODE];
         
         [eventBus subscribeTo:POMODORO_COMPLETE subscriber:^(id eventData)
         {
@@ -38,7 +40,7 @@
         }];
         
         [eventBus subscribeTo:READY_FOR_NEXT_TIMER subscriber:^(id eventData) {
-            if ([preferences getInt:PREF_CONTINUOUS_MODE] == YES) {
+            if (continuousMode == YES) {
                 //start the next timer, depending on the previous context
                 id <TYTimerContext> context = eventData;
                 switch ([context getContextType]) {

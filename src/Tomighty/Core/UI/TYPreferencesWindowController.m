@@ -37,6 +37,7 @@
     [self.check_play_sound_when_timer_goes_off setState:[preferences getInt:PREF_PLAY_SOUND_WHEN_TIMER_GOES_OFF]];
     [self.check_play_ticktock_sound_during_pomodoro setState:[preferences getInt:PREF_PLAY_TICKTOCK_SOUND_DURING_POMODORO]];
     [self.check_play_ticktock_sound_during_break setState:[preferences getInt:PREF_PLAY_TICKTOCK_SOUND_DURING_BREAK]];
+    [self.check_continuous_mode setState:[preferences getInt:PREF_CONTINUOUS_MODE]];
 }
 
 - (void)windowWillClose:(NSNotification *)notification {
@@ -70,6 +71,10 @@
 
 - (IBAction)save_play_ticktock_sound_during_break:(id)sender {
     [preferences setInt:PREF_PLAY_TICKTOCK_SOUND_DURING_BREAK value:(int)[self.check_play_ticktock_sound_during_break state]];
+}
+
+- (IBAction)save_continuous_mode:(id)sender {
+    [preferences setInt:PREF_CONTINUOUS_MODE value:(int)[self.check_continuous_mode state]];
 }
 
 @end
