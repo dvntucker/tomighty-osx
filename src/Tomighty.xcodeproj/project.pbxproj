@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00BC260A1D95ED79002D1605 /* SoundAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BC26091D95ED79002D1605 /* SoundAgent.swift */; };
 		300AE29218D1444400264309 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 300AE29018D1444400264309 /* PreferencesWindow.xib */; };
 		300AE29518D1471F00264309 /* TYPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AE29418D1471F00264309 /* TYPreferencesWindowController.m */; };
 		301A007918BD417200B8DEE0 /* TYDefaultTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 301A007818BD417200B8DEE0 /* TYDefaultTimer.m */; };
@@ -92,7 +91,6 @@
 
 /* Begin PBXFileReference section */
 		00BC26081D95ED79002D1605 /* Tomighty-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tomighty-Bridging-Header.h"; sourceTree = "<group>"; };
-		00BC26091D95ED79002D1605 /* SoundAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoundAgent.swift; path = Core/Agent/SoundAgent.swift; sourceTree = "<group>"; };
 		0B1A27968CA44FEFB1DA3DB3 /* libPods-TomightyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TomightyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		300AE29118D1444400264309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PreferencesWindow.xib; sourceTree = "<group>"; };
 		300AE29318D1471F00264309 /* TYPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TYPreferencesWindowController.h; path = Core/UI/TYPreferencesWindowController.h; sourceTree = "<group>"; };
@@ -240,7 +238,6 @@
 				3025AE5218D35B2B00BC4207 /* TYSoundAgent.m */,
 				3025AE5318D35B2B00BC4207 /* TYUserInterfaceAgent.h */,
 				3025AE5418D35B2B00BC4207 /* TYUserInterfaceAgent.m */,
-				00BC26091D95ED79002D1605 /* SoundAgent.swift */,
 			);
 			name = Agent;
 			sourceTree = "<group>";
@@ -710,7 +707,6 @@
 				309ECB0418C3828B00B270BF /* TYDefaultSystemTimer.m in Sources */,
 				3032EEE318C6AF2C00070BD2 /* TYDefaultSoundPlayer.m in Sources */,
 				C69D844E1D79722600B24643 /* TYHotkeyControl.m in Sources */,
-				00BC260A1D95ED79002D1605 /* SoundAgent.swift in Sources */,
 				300AE29518D1471F00264309 /* TYPreferencesWindowController.m in Sources */,
 				30DB72FA18CD54D200293915 /* TYDefaultTomighty.m in Sources */,
 				301A007918BD417200B8DEE0 /* TYDefaultTimer.m in Sources */,
@@ -909,7 +905,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E46E0E26D22DDAFC599CB28 /* Pods-TomightyTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tomighty.app/Contents/MacOS/Tomighty";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -935,7 +930,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9C134136195EF68DBA17C261 /* Pods-TomightyTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tomighty.app/Contents/MacOS/Tomighty";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
