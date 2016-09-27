@@ -11,6 +11,7 @@
 		00A3FFF81D9AF7F800B9F582 /* SystemTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A3FFF41D9AF7F800B9F582 /* SystemTimer.swift */; };
 		00A3FFF91D9AF7F800B9F582 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A3FFF51D9AF7F800B9F582 /* Timer.swift */; };
 		00A3FFFA1D9AF7F800B9F582 /* TimerContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A3FFF61D9AF7F800B9F582 /* TimerContext.swift */; };
+		00B18D931D9B017900DEE4EC /* SystemTimerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B18D921D9B017900DEE4EC /* SystemTimerTest.swift */; };
 		300AE29218D1444400264309 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 300AE29018D1444400264309 /* PreferencesWindow.xib */; };
 		300AE29518D1471F00264309 /* TYPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AE29418D1471F00264309 /* TYPreferencesWindowController.m */; };
 		301A007918BD417200B8DEE0 /* TYDefaultTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 301A007818BD417200B8DEE0 /* TYDefaultTimer.m */; };
@@ -99,6 +100,7 @@
 		00A3FFF41D9AF7F800B9F582 /* SystemTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemTimer.swift; sourceTree = "<group>"; };
 		00A3FFF51D9AF7F800B9F582 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		00A3FFF61D9AF7F800B9F582 /* TimerContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerContext.swift; sourceTree = "<group>"; };
+		00B18D921D9B017900DEE4EC /* SystemTimerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SystemTimerTest.swift; path = Core/Timer/SystemTimerTest.swift; sourceTree = "<group>"; };
 		00BC26081D95ED79002D1605 /* Tomighty-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tomighty-Bridging-Header.h"; sourceTree = "<group>"; };
 		0E174CF335457A8DE448298B /* Pods_TomightyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TomightyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		300AE29118D1444400264309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PreferencesWindow.xib; sourceTree = "<group>"; };
@@ -471,6 +473,7 @@
 			children = (
 				309ECB0718C382CF00B270BF /* TYTimerTests.m */,
 				309ECB0918C3830B00B270BF /* TYTimerContextTests.m */,
+				00B18D921D9B017900DEE4EC /* SystemTimerTest.swift */,
 			);
 			name = Timer;
 			sourceTree = "<group>";
@@ -603,13 +606,14 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = TY;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Gig Software";
 				TargetAttributes = {
 					304AF81118BD04BE00A2EA74 = {
 						LastSwiftMigration = 0800;
 					};
 					304AF83218BD04BE00A2EA74 = {
+						LastSwiftMigration = 0800;
 						TestTargetID = 304AF81118BD04BE00A2EA74;
 					};
 				};
@@ -810,6 +814,7 @@
 				30C383DC18CFDE8F00FABFFE /* TYAppUITests.m in Sources */,
 				3025AE5E18D35C0D00BC4207 /* TYUserInterfaceAgentTests.m in Sources */,
 				C69D84481D7971B900B24643 /* TYHotkeyTests.m in Sources */,
+				00B18D931D9B017900DEE4EC /* SystemTimerTest.swift in Sources */,
 				30BD314318C556EE00428B1E /* TYMockEventBus.m in Sources */,
 				30415FAE18C5109D0069FAE3 /* TYPreferencesTests.m in Sources */,
 			);
@@ -881,14 +886,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -919,14 +929,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -935,6 +950,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -942,12 +958,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D5F8A46E5BE5C772B1F89E5D /* Pods-Tomighty.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tomighty/Tomighty-Prefix.pch";
 				INFOPLIST_FILE = "Tomighty/Tomighty-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.tomighty.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tomighty/Tomighty-Bridging-Header.h";
@@ -961,12 +977,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4877E38B7177D4D0562EC6CE /* Pods-Tomighty.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tomighty/Tomighty-Prefix.pch";
 				INFOPLIST_FILE = "Tomighty/Tomighty-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.tomighty.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tomighty/Tomighty-Bridging-Header.h";
@@ -981,6 +997,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tomighty.app/Contents/MacOS/Tomighty";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -994,8 +1011,11 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "TomightyTests/TomightyTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Gig.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -1007,6 +1027,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tomighty.app/Contents/MacOS/Tomighty";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -1016,8 +1037,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tomighty/Tomighty-Prefix.pch";
 				INFOPLIST_FILE = "TomightyTests/TomightyTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Gig.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};

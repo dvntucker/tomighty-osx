@@ -30,7 +30,7 @@
     id <TYTimer> timer;
     id <TYPreferences> preferences;
     TYMockEventBus *eventBus;
-    MKTArgumentCaptor *timerContextArgument;
+    HCArgumentCaptor *timerContextArgument;
 }
 
 - (void)setUp
@@ -40,7 +40,7 @@
     preferences = mockProtocol(@protocol(TYPreferences));
     eventBus = [[TYMockEventBus alloc] init];
     tomighty = [[TYDefaultTomighty alloc] initWith:timer preferences:preferences eventBus:eventBus];
-    timerContextArgument = [[MKTArgumentCaptor alloc] init];
+    timerContextArgument = [[HCArgumentCaptor alloc] init];
     
     [given([preferences getInt:PREF_TIME_POMODORO]) willReturnInt:25];
     [given([preferences getInt:PREF_TIME_LONG_BREAK]) willReturnInt:15];
@@ -58,7 +58,7 @@
 {
     [tomighty startPomodoro];
     
-    [verify(timer) start:[timerContextArgument capture]];
+    [verify(timer) start:timerContextArgument];
     
     [self assertTimerContext:[timerContextArgument value]
                     isOfType:POMODORO
@@ -70,7 +70,7 @@
 {
     [tomighty startShortBreak];
     
-    [verify(timer) start:[timerContextArgument capture]];
+    [verify(timer) start:timerContextArgument];
     
     [self assertTimerContext:[timerContextArgument value]
                     isOfType:SHORT_BREAK
@@ -82,7 +82,7 @@
 {
     [tomighty startLongBreak];
     
-    [verify(timer) start:[timerContextArgument capture]];
+    [verify(timer) start:timerContextArgument];
     
     [self assertTimerContext:[timerContextArgument value]
                     isOfType:LONG_BREAK
