@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00A3FFF71D9AF7F800B9F582 /* EventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A3FFF31D9AF7F800B9F582 /* EventBus.swift */; };
+		00A3FFF81D9AF7F800B9F582 /* SystemTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A3FFF41D9AF7F800B9F582 /* SystemTimer.swift */; };
+		00A3FFF91D9AF7F800B9F582 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A3FFF51D9AF7F800B9F582 /* Timer.swift */; };
+		00A3FFFA1D9AF7F800B9F582 /* TimerContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A3FFF61D9AF7F800B9F582 /* TimerContext.swift */; };
 		300AE29218D1444400264309 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 300AE29018D1444400264309 /* PreferencesWindow.xib */; };
 		300AE29518D1471F00264309 /* TYPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AE29418D1471F00264309 /* TYPreferencesWindowController.m */; };
 		301A007918BD417200B8DEE0 /* TYDefaultTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 301A007818BD417200B8DEE0 /* TYDefaultTimer.m */; };
@@ -91,6 +95,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		00A3FFF31D9AF7F800B9F582 /* EventBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventBus.swift; sourceTree = "<group>"; };
+		00A3FFF41D9AF7F800B9F582 /* SystemTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemTimer.swift; sourceTree = "<group>"; };
+		00A3FFF51D9AF7F800B9F582 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		00A3FFF61D9AF7F800B9F582 /* TimerContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerContext.swift; sourceTree = "<group>"; };
 		00BC26081D95ED79002D1605 /* Tomighty-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tomighty-Bridging-Header.h"; sourceTree = "<group>"; };
 		0E174CF335457A8DE448298B /* Pods_TomightyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TomightyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		300AE29118D1444400264309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PreferencesWindow.xib; sourceTree = "<group>"; };
@@ -227,6 +235,9 @@
 				309ECB0118C3828B00B270BF /* TYDefaultSystemTimer.h */,
 				309ECB0218C3828B00B270BF /* TYDefaultSystemTimer.m */,
 				305D161418CCEE3500CE6A34 /* TYTimer.h */,
+				00A3FFF41D9AF7F800B9F582 /* SystemTimer.swift */,
+				00A3FFF51D9AF7F800B9F582 /* Timer.swift */,
+				00A3FFF61D9AF7F800B9F582 /* TimerContext.swift */,
 				301A007718BD417200B8DEE0 /* TYDefaultTimer.h */,
 				301A007818BD417200B8DEE0 /* TYDefaultTimer.m */,
 				301A007B18BD421500B8DEE0 /* TYTimerContext.h */,
@@ -262,6 +273,7 @@
 				3025AE5718D35B3700BC4207 /* TYSyntheticEventPublisher.h */,
 				3025AE5818D35B3700BC4207 /* TYSyntheticEventPublisher.m */,
 				3039D2F418C4DF7C008689C9 /* TYEventBus.h */,
+				00A3FFF31D9AF7F800B9F582 /* EventBus.swift */,
 				3039D2F218C4DF7C008689C9 /* TYDefaultEventBus.h */,
 				3039D2F318C4DF7C008689C9 /* TYDefaultEventBus.m */,
 			);
@@ -757,12 +769,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				304AF82218BD04BE00A2EA74 /* main.m in Sources */,
+				00A3FFF71D9AF7F800B9F582 /* EventBus.swift in Sources */,
 				30B89F9E18C3855600C1DD2B /* TYDefaultTimerContext.m in Sources */,
 				3025AE5518D35B2B00BC4207 /* TYSoundAgent.m in Sources */,
 				C69D84451D7971A000B24643 /* TYHotkey.m in Sources */,
 				309ECB0418C3828B00B270BF /* TYDefaultSystemTimer.m in Sources */,
 				3032EEE318C6AF2C00070BD2 /* TYDefaultSoundPlayer.m in Sources */,
+				00A3FFF81D9AF7F800B9F582 /* SystemTimer.swift in Sources */,
 				C69D844E1D79722600B24643 /* TYHotkeyControl.m in Sources */,
+				00A3FFF91D9AF7F800B9F582 /* Timer.swift in Sources */,
 				300AE29518D1471F00264309 /* TYPreferencesWindowController.m in Sources */,
 				30DB72FA18CD54D200293915 /* TYDefaultTomighty.m in Sources */,
 				301A007918BD417200B8DEE0 /* TYDefaultTimer.m in Sources */,
@@ -772,6 +787,7 @@
 				30415FB618C51C290069FAE3 /* TYUserDefaultsPreferences.m in Sources */,
 				3039D2F518C4DF7C008689C9 /* TYDefaultEventBus.m in Sources */,
 				309394EA18D0CBEC00D6C71A /* TYImageLoader.m in Sources */,
+				00A3FFFA1D9AF7F800B9F582 /* TimerContext.swift in Sources */,
 				3025AE5618D35B2B00BC4207 /* TYUserInterfaceAgent.m in Sources */,
 				3025AE5918D35B3700BC4207 /* TYSyntheticEventPublisher.m in Sources */,
 				304AF82918BD04BE00A2EA74 /* TYAppDelegate.m in Sources */,
@@ -963,6 +979,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E46E0E26D22DDAFC599CB28 /* Pods-TomightyTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tomighty.app/Contents/MacOS/Tomighty";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -988,6 +1005,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9C134136195EF68DBA17C261 /* Pods-TomightyTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tomighty.app/Contents/MacOS/Tomighty";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
