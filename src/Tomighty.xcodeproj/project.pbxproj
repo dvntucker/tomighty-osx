@@ -59,7 +59,8 @@
 		30CFBF1218BD76F7000266B4 /* TYMockSystemTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFBF1118BD76F7000266B4 /* TYMockSystemTimer.m */; };
 		30DB72F618CD4FC800293915 /* TYTomightyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DB72F518CD4FC800293915 /* TYTomightyTests.m */; };
 		30DB72FA18CD54D200293915 /* TYDefaultTomighty.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DB72F918CD54D200293915 /* TYDefaultTomighty.m */; };
-		88742E1C44894488BB0F167C /* libPods-TomightyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B1A27968CA44FEFB1DA3DB3 /* libPods-TomightyTests.a */; };
+		457B702709FD37890741D16B /* Pods_TomightyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E174CF335457A8DE448298B /* Pods_TomightyTests.framework */; };
+		4B90248DA964049E17A2B8B1 /* Pods_Tomighty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC0AD03FE004F16D28B3703 /* Pods_Tomighty.framework */; };
 		C69D84451D7971A000B24643 /* TYHotkey.m in Sources */ = {isa = PBXBuildFile; fileRef = C69D84441D7971A000B24643 /* TYHotkey.m */; };
 		C69D84481D7971B900B24643 /* TYHotkeyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C69D84471D7971B900B24643 /* TYHotkeyTests.m */; };
 		C69D844D1D79722600B24643 /* TYHotkeyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C69D844A1D79722600B24643 /* TYHotkeyCell.m */; };
@@ -91,7 +92,7 @@
 
 /* Begin PBXFileReference section */
 		00BC26081D95ED79002D1605 /* Tomighty-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tomighty-Bridging-Header.h"; sourceTree = "<group>"; };
-		0B1A27968CA44FEFB1DA3DB3 /* libPods-TomightyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TomightyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E174CF335457A8DE448298B /* Pods_TomightyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TomightyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		300AE29118D1444400264309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PreferencesWindow.xib; sourceTree = "<group>"; };
 		300AE29318D1471F00264309 /* TYPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TYPreferencesWindowController.h; path = Core/UI/TYPreferencesWindowController.h; sourceTree = "<group>"; };
 		300AE29418D1471F00264309 /* TYPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TYPreferencesWindowController.m; path = Core/UI/TYPreferencesWindowController.m; sourceTree = "<group>"; };
@@ -180,8 +181,10 @@
 		30DB72F718CD54C000293915 /* TYTomighty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TYTomighty.h; path = Core/TYTomighty.h; sourceTree = "<group>"; };
 		30DB72F818CD54D200293915 /* TYDefaultTomighty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TYDefaultTomighty.h; path = Core/TYDefaultTomighty.h; sourceTree = "<group>"; };
 		30DB72F918CD54D200293915 /* TYDefaultTomighty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TYDefaultTomighty.m; path = Core/TYDefaultTomighty.m; sourceTree = "<group>"; };
+		4877E38B7177D4D0562EC6CE /* Pods-Tomighty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tomighty.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tomighty/Pods-Tomighty.release.xcconfig"; sourceTree = "<group>"; };
 		4E46E0E26D22DDAFC599CB28 /* Pods-TomightyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomightyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TomightyTests/Pods-TomightyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9C134136195EF68DBA17C261 /* Pods-TomightyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomightyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TomightyTests/Pods-TomightyTests.release.xcconfig"; sourceTree = "<group>"; };
+		9CC0AD03FE004F16D28B3703 /* Pods_Tomighty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tomighty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69D84431D7971A000B24643 /* TYHotkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TYHotkey.h; path = Core/Hotkey/TYHotkey.h; sourceTree = "<group>"; };
 		C69D84441D7971A000B24643 /* TYHotkey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TYHotkey.m; path = Core/Hotkey/TYHotkey.m; sourceTree = "<group>"; };
 		C69D84471D7971B900B24643 /* TYHotkeyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TYHotkeyTests.m; path = Core/Hotkey/TYHotkeyTests.m; sourceTree = "<group>"; };
@@ -190,6 +193,7 @@
 		C69D844B1D79722600B24643 /* TYHotkeyControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TYHotkeyControl.h; path = Core/Hotkey/TYHotkeyControl.h; sourceTree = "<group>"; };
 		C69D844C1D79722600B24643 /* TYHotkeyControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TYHotkeyControl.m; path = Core/Hotkey/TYHotkeyControl.m; sourceTree = "<group>"; };
 		C69D84511D7B280800B24643 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		D5F8A46E5BE5C772B1F89E5D /* Pods-Tomighty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tomighty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tomighty/Pods-Tomighty.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +203,7 @@
 			files = (
 				C69D84521D7B280800B24643 /* Carbon.framework in Frameworks */,
 				304AF81618BD04BE00A2EA74 /* Cocoa.framework in Frameworks */,
+				4B90248DA964049E17A2B8B1 /* Pods_Tomighty.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +213,7 @@
 			files = (
 				304AF83618BD04BF00A2EA74 /* Cocoa.framework in Frameworks */,
 				304AF83518BD04BF00A2EA74 /* XCTest.framework in Frameworks */,
-				88742E1C44894488BB0F167C /* libPods-TomightyTests.a in Frameworks */,
+				457B702709FD37890741D16B /* Pods_TomightyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,10 +322,11 @@
 			isa = PBXGroup;
 			children = (
 				C69D84511D7B280800B24643 /* Carbon.framework */,
-				0B1A27968CA44FEFB1DA3DB3 /* libPods-TomightyTests.a */,
 				304AF81518BD04BE00A2EA74 /* Cocoa.framework */,
 				304AF83418BD04BE00A2EA74 /* XCTest.framework */,
 				304AF81718BD04BE00A2EA74 /* Other Frameworks */,
+				9CC0AD03FE004F16D28B3703 /* Pods_Tomighty.framework */,
+				0E174CF335457A8DE448298B /* Pods_TomightyTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -506,6 +512,8 @@
 			children = (
 				4E46E0E26D22DDAFC599CB28 /* Pods-TomightyTests.debug.xcconfig */,
 				9C134136195EF68DBA17C261 /* Pods-TomightyTests.release.xcconfig */,
+				D5F8A46E5BE5C772B1F89E5D /* Pods-Tomighty.debug.xcconfig */,
+				4877E38B7177D4D0562EC6CE /* Pods-Tomighty.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -538,9 +546,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 304AF84318BD04BF00A2EA74 /* Build configuration list for PBXNativeTarget "Tomighty" */;
 			buildPhases = (
+				CD9A9F0D36E4E85FA669CB39 /* [CP] Check Pods Manifest.lock */,
 				304AF80E18BD04BE00A2EA74 /* Sources */,
 				304AF80F18BD04BE00A2EA74 /* Frameworks */,
 				304AF81018BD04BE00A2EA74 /* Resources */,
+				3CDF3C06ADD003F901690105 /* [CP] Embed Pods Frameworks */,
+				B12EAAC84B3228AF977606B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -648,6 +659,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3CDF3C06ADD003F901690105 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tomighty/Pods-Tomighty-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		94D0AC8D9A87412895298800 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -678,7 +704,37 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TomightyTests/Pods-TomightyTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B12EAAC84B3228AF977606B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tomighty/Pods-Tomighty-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B7B8607396F24F888FD9E51D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CD9A9F0D36E4E85FA669CB39 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -868,6 +924,7 @@
 		};
 		304AF84418BD04BF00A2EA74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5F8A46E5BE5C772B1F89E5D /* Pods-Tomighty.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -886,6 +943,7 @@
 		};
 		304AF84518BD04BF00A2EA74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4877E38B7177D4D0562EC6CE /* Pods-Tomighty.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
