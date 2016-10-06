@@ -19,7 +19,6 @@
 #import "TYSoundPlayer.h"
 #import "TYStatusIcon.h"
 #import "TYStatusMenu.h"
-#import "TYSystemTimer.h"
 #import "TYTimer.h"
 
 #import "TYDefaultAppUI.h"

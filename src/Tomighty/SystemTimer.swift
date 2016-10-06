@@ -12,7 +12,7 @@ public class SystemTimer {
     
     var timer: Foundation.Timer?
     
-    public func triggerRepeatedly(trigger: @escaping () -> Void, intervalInSeconds: Double) {
+    public func triggerRepeatedly(intervalInSeconds: Double, _ trigger: @escaping () -> Void) {
         timer = Foundation.Timer.every(intervalInSeconds.seconds, trigger)
     }
     

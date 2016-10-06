@@ -121,7 +121,7 @@
 
 - (void)test_fire_TIMER_STOP_event_when_the_timer_goes_off
 {
-    id <TYEventBus> eventBus = mockProtocol(@protocol(TYEventBus));
+//    id <TYEventBus> eventBus = mockProtocol(@protocol(TYEventBus));
 //    TYMockTimerContext *timerContext = [[TYMockTimerContext alloc] initWithRemainingSeconds:3];
 //    TYMockSystemTimer *systemTimer = [[TYMockSystemTimer alloc] init];
 //    id <TYTimer> timer = [TYDefaultTimer createWith:eventBus systemTimer:systemTimer];

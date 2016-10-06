@@ -6,7 +6,6 @@
 //
 
 #import "TYSoundAgent.h"
-#import "TYTimerContext.h"
 
 @implementation TYSoundAgent
 {

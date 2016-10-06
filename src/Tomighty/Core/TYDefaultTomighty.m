@@ -6,7 +6,6 @@
 //
 
 #import <Carbon/Carbon.h>
-#import "TYDefaultTimerContext.h"
 #import "TYDefaultTomighty.h"
 #import "TYEventBus.h"
 #import "TYPreferences.h"

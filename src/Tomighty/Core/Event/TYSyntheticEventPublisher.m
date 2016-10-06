@@ -6,11 +6,11 @@
 //
 
 #import "TYSyntheticEventPublisher.h"
-#import "TYTimerContext.h"
+#import "Tomighty-Swift.h"
 
 @implementation TYSyntheticEventPublisher
 
-- (void)publishSyntheticEventsInResponseToOtherEventsFrom:(id <TYEventBus>)eventBus
+- (void)publishSyntheticEventsInResponseToOtherEventsFrom:(id <EventBus>)eventBus
 {
     [eventBus subscribeTo:TIMER_START subscriber:^(id <TYTimerContext> timerContext)
     {

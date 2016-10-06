@@ -11,20 +11,20 @@ import XCTest
 
 class SystemTimerTest: XCTestCase {
 
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-
     func testInterruptWithNoTrigger() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         let sysTimer = SystemTimer()
         sysTimer.interrupt()
+    }
+    
+    func testTimerGetsInvoked()  {
+        var clickCount = 0
+        let sysTimer = SystemTimer()
+        sysTimer.triggerRepeatedly(intervalInSeconds: 1, { clickCount = clickCount + 1 })
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: { () in
+            XCTAssert(clickCount > 0)
+            sysTimer.interrupt()
+        })
     }
 }

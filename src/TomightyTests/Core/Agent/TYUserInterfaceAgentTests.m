@@ -15,8 +15,7 @@
 
 #import "TYAppUI.h"
 #import "TYMockEventBus.h"
-#import "TYTimerContext.h"
-#import "TYUserInterfaceAgent.h"
+#import "Tomighty-Swift.h"
 
 @interface TYUserInterfaceAgentTests : XCTestCase
 
